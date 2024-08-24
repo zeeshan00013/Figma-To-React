@@ -51,9 +51,9 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
-               <div className={`fixed w-auto h-full inset-0  bg-[#ccc1c2] z-50 flex flex-col transition-transform duration-300 ${isOpen ? 'transform translate-x-10' : 'transform -translate-x-full'} md:hidden`}>
+               <div className={`fixed w-auto h-full inset-0  bg-[#ccc1c2] z-50 flex flex-col transition-transform duration-300 ${isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'} md:hidden`}>
                 <button 
-                    className='absolute top-10 right-14  text-[#0E1F51] text-5xl '
+                    className='absolute top-10 right-8  text-[#0E1F51] text-5xl '
                     onClick={() => setIsOpen(false)}
                 >
                     <IoMdClose />

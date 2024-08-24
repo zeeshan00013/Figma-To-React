@@ -19,7 +19,7 @@ const Footer = () => {
               <img src={mainlogo} alt="Main Logo" className="w-24 md:w-32" />
             </Link>
           </div>
-          <p className="text-sm md:text-base mb-6">
+          <p className="text-sm text-center w-3/5 ml-20 md:text-start md:ml-0 md:w-auto mb-6">
             Fact that a reader will be distracted by the readable content of a page when looking at.
           </p>
           <div className="flex justify-center md:justify-start gap-2">

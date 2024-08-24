@@ -274,43 +274,43 @@ const HomeServices = () => {
 </div>
 
 
-      <div className="w-full  bg-[#F7F7F7]  justify-center h-[680px] mt-20">
-        <div className="flex flex-col justify-center items-center mt-20">
-          <div className="flex flex-col items-center">
-            <span className="text-[#ff4a4a] text-2xl font-bold">\ Team \</span>
-            <span className="text-[#0E1F51] text-4xl font-bold">
-              Our Leaders
-            </span>
-          </div>
+<div className="w-full bg-[#F7F7F7] flex flex-col items-center mt-20">
+  <div className="flex flex-col items-center mt-10 px-4 md:px-8">
+    <div className="text-center">
+      <span className="text-[#ff4a4a] text-xl md:text-2xl font-bold">
+        \ Team \
+      </span>
+      <span className="text-[#0E1F51] text-3xl md:text-4xl font-bold block mt-2">
+        Our Leaders
+      </span>
+    </div>
 
-          <div className="mt-10 flex">
-            <div className="flex justify-center gap-5 flex-wrap">
-              {imagesData.map((card) => (
-                <div
-                  key={card.id}
-                  className="w-[255px] h-[334px] bg-[#F7F7F7] flex flex-col justify-start rounded-lg"
-                >
-                  <div className="  mt-5 rounded">
-                    <div className="bg-white w-[263px] h-[300px] flex justify-center items-center rounded-lg">
-                      <img
-                        src={card.src}
-                        alt=""
-                        className="w-[263px] h-[300px]"
-                      />
-                    </div>
-                    <div className="mt-5">
-                      <p className="text-[#FF3E54] text-xl font-bold ml-10">
-                        {card.name}
-                      </p>
-                      <p className="text-center">{card.position}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+    <div className="mt-10 flex flex-wrap justify-center gap-5 px-4">
+      {imagesData.map((card) => (
+        <div
+          key={card.id}
+          className="w-full sm:w-[255px] h-auto bg-[#F7F7F7] flex flex-col justify-start rounded-lg"
+        >
+          <div className="mt-5 rounded">
+            <div className="bg-white w-full h-auto flex justify-center items-center rounded-lg">
+              <img
+                src={card.src}
+                alt=""
+                className="w-full h-auto object-cover rounded-t-lg"
+              />
+            </div>
+            <div className="mt-5 text-center">
+              <p className="text-[#FF3E54] text-lg md:text-xl font-bold">
+                {card.name}
+              </p>
+              <p>{card.position}</p>
             </div>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
 
       <div className="w-full bg-white h-auto py-10">
       <div className="flex flex-col items-center px-4">
